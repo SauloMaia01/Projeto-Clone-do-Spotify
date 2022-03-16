@@ -1,3 +1,8 @@
+:root{
+    --default-green: #1db954;
+    --light-green: #1ed760;
+}
+
 * {
 	box-sizing: border-box;
     margin: 0;
@@ -11,7 +16,7 @@ body {
 /* Utility Class */
 
 .bnt-primary{
-    background: #1db954;
+    background: var(--default-green);
     color: white;
     text-transform: uppercase;
     padding: 15px 68px;
@@ -19,13 +24,18 @@ body {
     border-radius: 30px;
     letter-spacing: 1px;
     font-weight: bold;
+    transition: all 300ms ease;
+}
+
+.bnt-primary:hover{
+    background: var(--light-green);
+    cursor: pointer;
 }
 
 .logo{
     height: 40px;
     width: auto;
 }
-
 
     /* Navbar */
 
@@ -55,6 +65,12 @@ body {
 
 #navbar .navbar-container ul li{
     padding: 0 20px;
+    transition: all 300ms ease;
+}
+
+#navbar .navbar-container ul li:hover{
+    color: var(--default-green);
+    cursor: pointer;
 }
 
 #navbar .navbar-container ul li:nth-child(3){
@@ -101,6 +117,7 @@ body {
     display: flex;
     width: 60%;
     margin: auto;
+    justify-content: space-between;
 }
 
 #footer .footer-content .footer-menu{
@@ -128,6 +145,12 @@ body {
 .socials i{
     margin: 0 20px;
     font-size: 1.7rem;
+    transition: all 300ms ease;
+}
+
+.socials i:hover{
+    color: var(--default-green);
+    cursor: pointer;
 }
 
 /*Footer info*/
@@ -146,15 +169,17 @@ body {
 .footer-info .footer-info-items{
     display: flex;
     list-style: none;
-    padding-inline-end: 10px;
+    padding-inline-end: 20px;
 }
 
 .footer-info .footer-info-items .footer-info-item{
     margin: 0 10px;
+    transition: all 300ms ease;
 }
 
-.footer-info .rights{
-    
+.footer-info .footer-info-items .footer-info-item:hover{
+    color: var(--default-green);
+    cursor: pointer;
 }
 
 .footer-info .rights .country{
@@ -162,6 +187,15 @@ body {
     justify-content: flex-end;
     align-items: center;
     margin-bottom: 10px;
+}
+
+.footer-info .rights .country p{
+    transition: all 300ms ease;
+}
+
+.footer-info .rights .country p:hover{
+    color: var(--default-green);
+    cursor: pointer;
 }
 
 .footer-info .rights .country .brazil-flag{
